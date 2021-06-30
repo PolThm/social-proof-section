@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  background:
+      url("images/bg-pattern-top-desktop.svg") left 0 top 0 no-repeat,
+      url("images/bg-pattern-bottom-desktop.svg") right 0 bottom 0 no-repeat;
+}
