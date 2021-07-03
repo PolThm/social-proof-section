@@ -82,6 +82,7 @@ main #testimonials .testimonial-card {
   flex-direction: column;
   gap: 2rem;
   font-size: 0.87rem;
+  height: max-content;
 }
 main #testimonials .testimonial-card__header {
   display: flex;
@@ -112,7 +113,7 @@ main #testimonials .testimonial-card__testimony {
 
   main {
     margin: 6rem 7rem;
-    gap: 3rem;
+    gap: 4rem;
   }
   main #headings-and-ratings {
     flex-direction: row;
@@ -138,10 +139,26 @@ main #testimonials .testimonial-card__testimony {
     flex-direction: row;
     padding: 1rem 2rem;
     gap: 2rem;
-    max-width: 26rem;
+    max-width: 26.1rem;
+  }
+  main #headings-and-ratings #ratings .rating-card:nth-child(2) {
+    margin-left: 10%;
+  }
+  main #headings-and-ratings #ratings .rating-card:nth-child(3) {
+    margin-left: 20%;
   }
   main #testimonials {
     flex-direction: row;
+    gap: 2rem;
+  }
+  main #testimonials .testimonial-card {
+    gap: 2rem;
+  }
+  main #testimonials .testimonial-card:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+  main #testimonials .testimonial-card:nth-child(3) {
+    margin-top: 3rem;
   }
 }
 @media (min-width: 1024px) {

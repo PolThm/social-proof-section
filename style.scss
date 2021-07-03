@@ -99,6 +99,7 @@ main {
       flex-direction: column;
       gap: 2rem;
       font-size: 0.87rem;
+      height: max-content;
       &__header {
         display: flex;
         align-items: center;
@@ -132,7 +133,7 @@ main {
   }
   main {
     margin: 6rem 7rem;
-    gap: 3rem;
+    gap: 4rem;
     #headings-and-ratings {
       flex-direction: row;
       > * {
@@ -157,12 +158,29 @@ main {
           flex-direction: row;
           padding: 1rem 2rem;
           gap: 2rem;
-          max-width: 26rem;
+          max-width: 26.1rem;
+          &:nth-child(2) {
+            margin-left: 10%;
+          }
+          &:nth-child(3) {
+            margin-left: 20%;
+          }
         }
+
       }
     }
     #testimonials {
       flex-direction: row;
+      gap: 2rem;
+      .testimonial-card {
+        gap: 2rem;
+        &:nth-child(2) {
+          margin-top: 1.5rem;
+        }
+        &:nth-child(3) {
+          margin-top: 3rem;
+        }
+      }
     }
   }
 }
