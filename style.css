@@ -104,10 +104,6 @@ main #testimonials .testimonial-card__header-verified {
 main #testimonials .testimonial-card__testimony {
   color: #f7f2f7;
   line-height: 1.5rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -155,6 +151,14 @@ main #testimonials .testimonial-card__testimony {
   }
   main #testimonials .testimonial-card {
     gap: 2rem;
+  }
+  main #testimonials .testimonial-card__testimony {
+    color: #f7f2f7;
+    line-height: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   main #testimonials .testimonial-card:nth-child(2) {
     margin-top: 1.5rem;

@@ -120,10 +120,6 @@ main {
       &__testimony {
         color: $light-grayish-magenta;
         line-height: 1.5rem;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
       }
     }
   }
@@ -176,6 +172,14 @@ main {
       gap: 2rem;
       .testimonial-card {
         gap: 2rem;
+        &__testimony {
+          color: $light-grayish-magenta;
+          line-height: 1.5rem;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
         &:nth-child(2) {
           margin-top: 1.5rem;
         }
