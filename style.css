@@ -4,68 +4,71 @@ html {
 
 body {
   font-family: "Spartan", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   background: url("images/bg-pattern-top-mobile.svg") left 0 top 0 no-repeat, url("images/bg-pattern-bottom-mobile.svg") right 0 bottom 0 no-repeat;
 }
 
 main {
-  padding: 4.5rem 1.5rem;
+  margin: 4.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
-main #headings {
-  padding: 1rem 0;
+main #headings-and-ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+main #headings-and-ratings #headings {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
 }
-main #headings > * {
+main #headings-and-ratings #headings > * {
   text-align: center;
 }
-main #headings h1 {
+main #headings-and-ratings #headings h1 {
   font-size: 2rem;
   font-weight: 700;
   color: #502050;
 }
-main #headings p {
-  font-size: 0.95rem;
+main #headings-and-ratings #headings p {
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.5rem;
   color: #937b92;
 }
-main #ratings {
-  padding: 1.5rem 0;
+main #headings-and-ratings #ratings {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
-main #ratings .rating-card {
+main #headings-and-ratings #ratings .rating-card {
   background: #f7f2f7;
   border-radius: 0.5rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
-main #ratings .rating-card__stars {
+main #headings-and-ratings #ratings .rating-card__stars {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
 }
-main #ratings .rating-card__stars > img {
+main #headings-and-ratings #ratings .rating-card__stars > img {
   width: max-content;
 }
-main #ratings .rating-card p {
+main #headings-and-ratings #ratings .rating-card p {
   text-align: center;
   font-weight: 700;
   color: #502050;
   font-size: 0.9rem;
 }
 main #testimonials {
-  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,17 +92,69 @@ main #testimonials .testimonial-card__header img {
   width: 2.7rem;
   margin-right: 1.5rem;
 }
-main #testimonials .testimonial-card__header-texts-name {
+main #testimonials .testimonial-card__header-name {
   color: #f7f2f7;
   font-weight: 700;
 }
-main #testimonials .testimonial-card__header-texts-verified {
+main #testimonials .testimonial-card__header-verified {
   margin-top: 0.5rem;
   color: #ee68a4;
 }
 main #testimonials .testimonial-card__testimony {
   color: #f7f2f7;
   line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url("images/bg-pattern-top-desktop.svg") left 0 top 0 no-repeat, url("images/bg-pattern-bottom-desktop.svg") right 0 bottom 0 no-repeat;
+  }
+
+  main {
+    margin: 6rem 7rem;
+    gap: 3rem;
+  }
+  main #headings-and-ratings {
+    flex-direction: row;
+  }
+  main #headings-and-ratings > * {
+    flex: 1;
+  }
+  main #headings-and-ratings #headings {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  main #headings-and-ratings #headings > * {
+    text-align: left;
+    width: 95%;
+  }
+  main #headings-and-ratings #headings h1 {
+    font-size: 2.5rem;
+  }
+  main #headings-and-ratings #headings p {
+    font-size: 1rem;
+  }
+  main #headings-and-ratings #ratings .rating-card {
+    flex-direction: row;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    max-width: 26rem;
+  }
+  main #testimonials {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    margin: 9rem 11rem;
+  }
+  main #headings-and-ratings #headings > * {
+    text-align: left;
+    width: 85%;
+  }
+  main #headings-and-ratings #headings h1 {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
