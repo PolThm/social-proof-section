@@ -4,7 +4,6 @@ html {
 
 body {
   font-family: "Spartan", sans-serif;
-  min-height: 100vh;
   background: url("images/bg-pattern-top-mobile.svg") left 0 top 0 no-repeat, url("images/bg-pattern-bottom-mobile.svg") right 0 bottom 0 no-repeat;
 }
 
@@ -112,7 +111,7 @@ main #testimonials .testimonial-card__testimony {
   }
 
   main {
-    margin: 6rem 7rem;
+    margin: 6rem 7rem 3rem 7rem;
     gap: 4rem;
   }
   main #headings-and-ratings {
@@ -169,7 +168,7 @@ main #testimonials .testimonial-card__testimony {
 }
 @media (min-width: 1024px) {
   main {
-    margin: 9rem 11rem;
+    margin: 8.75rem 11rem 5.25rem 11rem;
   }
   main #headings-and-ratings #headings > * {
     text-align: left;
