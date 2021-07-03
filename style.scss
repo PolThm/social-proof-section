@@ -120,6 +120,10 @@ main {
       &__testimony {
         color: $light-grayish-magenta;
         line-height: 1.5rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
     }
   }
@@ -155,9 +159,7 @@ main {
       }
       #ratings {
         .rating-card {
-          flex-direction: row;
           padding: 1rem 2rem;
-          gap: 2rem;
           max-width: 26.1rem;
           &:nth-child(2) {
             margin-left: 10%;
@@ -196,6 +198,12 @@ main {
         }
         h1 {
           font-size: 3rem;
+        }
+      }
+      #ratings {
+        .rating-card {
+          flex-direction: row;
+          gap: 2rem;
         }
       }
     }

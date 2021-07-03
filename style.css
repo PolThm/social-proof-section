@@ -104,6 +104,10 @@ main #testimonials .testimonial-card__header-verified {
 main #testimonials .testimonial-card__testimony {
   color: #f7f2f7;
   line-height: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -136,9 +140,7 @@ main #testimonials .testimonial-card__testimony {
     font-size: 1rem;
   }
   main #headings-and-ratings #ratings .rating-card {
-    flex-direction: row;
     padding: 1rem 2rem;
-    gap: 2rem;
     max-width: 26.1rem;
   }
   main #headings-and-ratings #ratings .rating-card:nth-child(2) {
@@ -171,6 +173,10 @@ main #testimonials .testimonial-card__testimony {
   }
   main #headings-and-ratings #headings h1 {
     font-size: 3rem;
+  }
+  main #headings-and-ratings #ratings .rating-card {
+    flex-direction: row;
+    gap: 2rem;
   }
 }
 
