@@ -151,18 +151,18 @@ main {
         }
       }
       #ratings {
+        > * {
+          display: flex;
+        }
         #rating-container-2 {
           justify-content: center;
         }
         #rating-container-3 {
           justify-content: flex-end;
         }
-        .rating-container {
-          display: flex;
-          .rating-card {
-            padding: 1rem 2rem;
-            width: min(26.1rem, 100%);
-          }
+        .rating-card {
+          padding: 1rem 2rem;
+          width: min(26.1rem, 100%);
         }
       }
     }

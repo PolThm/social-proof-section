@@ -135,16 +135,16 @@ main #testimonials .testimonial-card__testimony {
   main #headings-and-ratings #headings p {
     font-size: 1rem;
   }
+  main #headings-and-ratings #ratings > * {
+    display: flex;
+  }
   main #headings-and-ratings #ratings #rating-container-2 {
     justify-content: center;
   }
   main #headings-and-ratings #ratings #rating-container-3 {
     justify-content: flex-end;
   }
-  main #headings-and-ratings #ratings .rating-container {
-    display: flex;
-  }
-  main #headings-and-ratings #ratings .rating-container .rating-card {
+  main #headings-and-ratings #ratings .rating-card {
     padding: 1rem 2rem;
     width: min(26.1rem, 100%);
   }
