@@ -134,15 +134,18 @@ main #testimonials .testimonial-card__testimony {
   main #headings-and-ratings #headings p {
     font-size: 1rem;
   }
-  main #headings-and-ratings #ratings .rating-card {
+  main #headings-and-ratings #ratings #rating-container-2 {
+    justify-content: center;
+  }
+  main #headings-and-ratings #ratings #rating-container-3 {
+    justify-content: flex-end;
+  }
+  main #headings-and-ratings #ratings .rating-container {
+    display: flex;
+  }
+  main #headings-and-ratings #ratings .rating-container .rating-card {
     padding: 1rem 2rem;
-    max-width: 26.1rem;
-  }
-  main #headings-and-ratings #ratings .rating-card:nth-child(2) {
-    margin-left: 10%;
-  }
-  main #headings-and-ratings #ratings .rating-card:nth-child(3) {
-    margin-left: 20%;
+    width: min(26.1rem, 100%);
   }
   main #testimonials {
     flex-direction: row;
@@ -168,7 +171,7 @@ main #testimonials .testimonial-card__testimony {
 }
 @media (min-width: 1024px) {
   main {
-    margin: 8.75rem 11rem 5.25rem 11rem;
+    margin: 8.75rem 11rem 5rem 11rem;
   }
   main #headings-and-ratings #headings > * {
     text-align: left;

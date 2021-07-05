@@ -150,17 +150,19 @@ main {
         }
       }
       #ratings {
-        .rating-card {
-          padding: 1rem 2rem;
-          max-width: 26.1rem;
-          &:nth-child(2) {
-            margin-left: 10%;
-          }
-          &:nth-child(3) {
-            margin-left: 20%;
+        #rating-container-2 {
+          justify-content: center;
+        }
+        #rating-container-3 {
+          justify-content: flex-end;
+        }
+        .rating-container {
+          display: flex;
+          .rating-card {
+            padding: 1rem 2rem;
+            width: min(26.1rem, 100%);
           }
         }
-
       }
     }
     #testimonials {
@@ -189,7 +191,7 @@ main {
 
 @media (min-width: 1024px) {
   main {
-    margin: 8.75rem 11rem 5.25rem 11rem;
+    margin: 8.75rem 11rem 5rem 11rem;
     #headings-and-ratings {
       #headings {
         > * {
