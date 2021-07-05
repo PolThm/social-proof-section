@@ -102,6 +102,7 @@ main #testimonials .testimonial-card__header-verified {
 }
 main #testimonials .testimonial-card__testimony {
   color: #f7f2f7;
+  font-weight: 500;
   line-height: 1.5rem;
 }
 
