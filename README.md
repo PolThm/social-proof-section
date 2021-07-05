@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://polthm.github.io/faq-accordion-card/](https://polthm.github.io/faq-accordion-card/)
+- Live Site URL: [https://polthm.github.io/social-proof-section/](https://polthm.github.io/social-proof-section/)
 
 ## My process
 
